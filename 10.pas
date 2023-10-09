@@ -1,4 +1,4 @@
-﻿var i,k,a,b,c,d,e,f:integer;
+﻿var i,k,a,b,c,d,e,f:int64;
 begin
   i:=100000;
   while i-1<>999999 do
@@ -12,5 +12,5 @@ begin
     if (a+b+c=13) and (d+e+f=13) then k:=k+1;
     i:=i+1;
     end;
-    print(k);
+    write('Число счастливых билетов равно ',k);
 end.
