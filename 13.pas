@@ -1,16 +1,19 @@
-﻿var i,n,s,sum:integer;
+﻿var i,s,sum:integer;
 arif:real;
 begin
-readln(n);
-i:=0;
-sum:=0;
+i:=1;
 s:=3;
-while i<>n do
+sum:=s;
+write(s,' ');
+while i<>10 do
   begin
-    sum:=s+sum;
     i:=i+1;
     s:=s+6;
+    sum:=s+sum;
+    write(s,' ');
   end;
-arif:=sum/i;
-print(arif);
+arif:=sum/10;
+writeln('  получившийся ряд');
+write('Среднее арифметическое = ');
+writeln(arif:0:3);
 end.
