@@ -1,19 +1,13 @@
-﻿var n,i,sum:integer;
+var n,i,sum:int64;
 begin
+write('Введите n ');
 readln(n);
 i:=0;
 sum:=1;
-if n>0 then
-  while i<>n do
-  begin
-i:=i+1;  sum:=sum*i;
-
-end
-else
-  while i<>n do
-  begin
-   i:=i-1; sum:=sum*i;
-    
-  end;
-print(sum)
+while i<>abs(n) do
+begin
+i:=i+1; sum:=sum*i;
+end;
+if n<0 then sum:=-sum;
+write('n! = ',sum);
 end.
