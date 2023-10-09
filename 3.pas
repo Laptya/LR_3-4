@@ -1,5 +1,6 @@
 ﻿var i:integer;
 begin
+writeln('Чётные числа от 2 до 99');
   for i:=2 to 99 do
     if i mod 2 = 0 then
       writeln(i)
